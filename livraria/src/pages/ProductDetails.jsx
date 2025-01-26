@@ -2,6 +2,12 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import livros from '../livros';
 import { useCart } from '../context/CartContext';
+import styled from 'styled-components';
+
+const ProductDetailsWrapper = styled.div`
+  padding: 20px;
+  text-align: center;
+`;
 
 function ProductDetails() {
   const { id } = useParams();
@@ -13,13 +19,13 @@ function ProductDetails() {
   };
 
   return (
-    <div>
+    <ProductDetailsWrapper>
       <h1>{livro.nome}</h1>
       <img src={livro.imagem} alt={livro.nome} />
       <p>{livro.descricao}</p>
       <p>{livro.preco}</p>
       <button onClick={addToCart}>Adicionar ao Carrinho</button>
-    </div>
+    </ProductDetailsWrapper>
   );
 }
 

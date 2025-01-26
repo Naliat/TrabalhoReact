@@ -7,24 +7,27 @@ const SearchBarWrapper = styled.div`
   margin: 20px 0;
 
   input {
-    padding: 10px;
+    padding: 12px 20px;
     font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 25px 0 0 25px;
     outline: none;
-
-    @media (max-width: 768px) {
-      flex: 1;
-    }
+    flex: 1;
+    max-width: 400px;
   }
 
   button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     font-size: 16px;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 25px 25px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
 
-    @media (max-width: 768px) {
-      padding: 10px;
+    &:hover {
+      background-color: #0056b3;
     }
   }
 
@@ -34,11 +37,11 @@ const SearchBarWrapper = styled.div`
 
     input {
       margin-bottom: 10px;
-      border-radius: 5px;
+      border-radius: 25px;
     }
 
     button {
-      border-radius: 5px;
+      border-radius: 25px;
     }
   }
 `;
