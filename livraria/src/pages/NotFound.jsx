@@ -1,21 +1,27 @@
-import React from 'react';
-import styled from 'styled-components';
-import dog1 from '../imgs/dog1.jpg';
-import dog2 from '../imgs/index';
-import dog3 from '../imgs/dog3.jpg';
+import React from "react";
+import styled from "styled-components";
+import dog1 from "../imgs/dog1.jpg";
+import dog2 from "../imgs/dog2.jpg";
+import dog3 from "../imgs/dog3.jpg";
 
 const NotFoundWrapper = styled.div`
   padding: 20px;
   text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
 `;
 
 const ErrorImage = styled.img`
-  max-width: 100%;
+  width: 80%;
+  max-width: 400px;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
 `;
 
-const images = [dog1, dog2, dog3, dog1, dog2];
+const images = [dog1, dog2, dog3];
 
 function NotFound() {
   const randomImage = images[Math.floor(Math.random() * images.length)];
