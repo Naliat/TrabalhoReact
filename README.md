@@ -26,7 +26,7 @@ Este é um projeto de uma livraria online desenvolvido utilizando React. O objet
 1. **Clone o repositório**
    ```bash
    git clone https://github.com/Naliat/TrabalhoReact.git
-   cd TrabalhoReact
+   cd Livraria
 
 Instale as dependências
 ```
