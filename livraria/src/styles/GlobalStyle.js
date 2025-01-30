@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: #333;
+    color: inherit;
   }
 
   ul {
@@ -24,17 +24,8 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   button {
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
     transition: background-color 0.3s;
-
-    &:hover {
-      background-color: #555;
-    }
   }
 
   header, footer {
@@ -44,26 +35,15 @@ export const GlobalStyle = createGlobalStyle`
     text-align: center;
   }
 
-  .product-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
-
-  .product-card, .cart-item {
-    max-width: 200px;
-    margin: 20px;
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
 
   @media (max-width: 768px) {
-    .product-card, .cart-item {
-      max-width: 100%;
-    }
-
-    header nav a {
-      display: block;
-      margin: 10px 0;
+    .container {
+      padding: 10px;
     }
   }
 `;
