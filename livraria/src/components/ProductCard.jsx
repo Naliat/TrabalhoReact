@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ProductCardWrapper = styled.div`
+  width: 100%;
+  margin: 20px;
   border: 1px solid #e0e0e0;
   padding: 20px;
   border-radius: 10px;
@@ -34,16 +36,18 @@ const ProductCardWrapper = styled.div`
   }
 
   button {
+    margin-left: 20px;
     background-color: #007bff;
     color: white;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 
     &:hover {
       background-color: #0056b3;
+      transform: scale(1.05);
     }
   }
 
